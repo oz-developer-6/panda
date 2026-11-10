@@ -1,0 +1,338 @@
+{
+  "info": {
+    "_postman_id": "f9828cc7-3937-45fa-8ad6-a25bf036afa7",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60102936",
+    "_collection_link": "https://go.postman.co/collection/60102936-f9828cc7-3937-45fa-8ad6-a25bf036afa7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create a appointment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"patient_id\":   1,\n  \"clinician_id\": 2,\n  \"scheduled_at\": \"2026-10-11T09:00:00Z\",\n  \"notes\":        \"Blood results\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9292/appointments",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "appointments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update an appointment",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"attended\",\n  \"notes\": \"Patient attended to the hospital, we will follow-up in 6 months\",\n  \"clinician_id\": 3,\n  \"scheduled_at\": \"2026-11-10T10:00:00Z\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9292/appointments/1",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "appointments",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a clinician",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Dr Ozgur Tezel\",\n  \"department\": \"Cardihology\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9292/clinicians",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "clinicians"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a clinician Copy",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Dr Ozgur Tezel\",\n  \"department\": \"Cardihology\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9292/clinicians/1",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "clinicians",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a patient",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nhs_number\":     \"943 476 5919\",\n  \"first_name\":     \"John\",\n  \"last_name\":      \"Smith\",\n  \"date_of_birth\":  \"1980-01-15\",\n  \"address_line_1\": \"15 Developer Street\",\n  \"address_line_2\": \"Congleton\",\n  \"postcode\":       \"CW12 3LY\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9292/patients",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "patients"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get a patient",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://0.0.0.0:9292/patients/1 ",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "patients",
+            "1 "
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get a clinician",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://0.0.0.0:9292/clinicians/2",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "clinicians",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get appointments of a patient",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://0.0.0.0:9292/patients/1/appointments",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "patients",
+            "1",
+            "appointments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete a patient",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://0.0.0.0:9292/patients/1 ",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "patients",
+            "1 "
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update a patient",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"first_name\":     \"John edited\",\n  \"last_name\":      \"Smith\",\n  \"date_of_birth\":  \"1980-01-15\",\n  \"address_line_1\": \"15 Developer Street\",\n  \"address_line_2\": \"Congleton\",\n  \"postcode\":       \"CW12 3LY\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9292/patients/1 ",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "patients",
+            "1 "
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get missed appointments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://0.0.0.0:9292/stats/missed",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9292",
+          "path": [
+            "stats",
+            "missed"
+          ],
+          "query": [
+            {
+              "key": "clinician_id",
+              "value": "1",
+              "disabled": true
+            },
+            {
+              "key": "department",
+              "value": "test",
+              "disabled": true
+            },
+            {
+              "key": "from",
+              "value": "2025-11-10T20:01:58Z",
+              "disabled": true
+            },
+            {
+              "key": "to",
+              "value": "2027-11-10T20:01:58Z",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

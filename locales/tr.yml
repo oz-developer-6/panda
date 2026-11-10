@@ -1,0 +1,13 @@
+tr:
+  errors:
+    not_found: "%{resource} bulunamadi"
+    validation_failed: "Girdiginiz bilgiler yanlis"
+    invalid_nhs_number: "NHS numarasi yanlis"
+    invalid_postcode: "Posta kodu Birlesik Krallik icin degil"
+    nhs_number_taken: "Girdiginiz NHS numarasi sistemde var"
+    cannot_reinstate: "randevu iptal edildigi icin tekrar verilemez"
+    cannot_modify_terminal: "Randevu degistrilemez %{status}"
+    invalid_status_transition: "Cevirme islemi yapilamaz bundan %{from} buna %{to}"
+    missing_field: "%{field} girilmelidir"
+    invalid_date: "%{field} dogru bir tarih ve zaman girilmelidir"
+    patient_has_appointments: "Randevusu olan hasta silinmez"

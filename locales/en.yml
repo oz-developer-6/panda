@@ -1,0 +1,13 @@
+en:
+  errors:
+    not_found: "%{resource} not found"
+    validation_failed: "Validation failed"
+    invalid_nhs_number: "NHS number is invalid"
+    invalid_postcode: "Postcode is not a valid for UK postcode"
+    nhs_number_taken: "NHS number already registered"
+    cannot_reinstate: "Appointment is cancelled and cannot be reinstated"
+    cannot_modify_terminal: "Cannot modify a %{status} appointment"
+    invalid_status_transition: "Cannot transition from %{from} to %{to}"
+    missing_field: "%{field} is required"
+    invalid_date: "%{field} must be a valid date time"
+    patient_has_appointments: "Cannot delete patient with appointments"
