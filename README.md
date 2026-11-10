@@ -32,6 +32,7 @@ i18n gem is used so we can translate with yml files I have added one for English
 cd panda
 
 # 2. Install dependencies
+gem install bundler:4.0.23
 bundle install
 
 # 3. Run database migrations ( it will create db/panda.sqlite3)
