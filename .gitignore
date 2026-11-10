@@ -19,3 +19,6 @@ vendor/bundle/
 # Local environment and editor files
 .env
 .DS_Store
+db/panda.sqlite3
+db/panda.sqlite3-shm
+db/panda.sqlite3-wal

@@ -36,6 +36,7 @@ gem install bundler:4.0.23
 bundle install
 
 # 3. Run database migrations ( it will create db/panda.sqlite3)
+if the below does not work, delete the db/panda.sqlite3, db/panda.sqlite3-shm, db/panda.sqlite3-wal files
 bundle exec rake db:migrate
 
 # 4. Start the server (it will start it on port 9292, if required please change it so it does not crash with other things running on the same port)
